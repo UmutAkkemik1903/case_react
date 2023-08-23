@@ -1,16 +1,21 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-import { sampleUserData } from '../../../utils/sample-data'
+import { NextApiRequest, NextApiResponse } from 'next';
 
-const handler = (_req: NextApiRequest, res: NextApiResponse) => {
-  try {
-    if (!Array.isArray(sampleUserData)) {
-      throw new Error('Cannot find user data')
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method === 'POST') {
+    const newUser = req.body;
+
+    try {
+      const data = require('utils/users.json');
+      data.users.push(newUser);
+
+      const fs = require('fs');
+      fs.writeFileSync('utils/users.json', JSON.stringify(data, null, 2));
+
+      res.status(201).json(newUser);
+    } catch (error) {
+      res.status(500).json({ error: 'Kullanıcı eklenirken hata oluştu' });
     }
-
-    res.status(200).json(sampleUserData)
-  } catch (err: any) {
-    res.status(500).json({ statusCode: 500, message: err.message })
+  } else {
+    res.status(405).end();
   }
 }
-
-export default handler

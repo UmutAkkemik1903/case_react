@@ -1,13 +1,34 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { useAuth} from '../path/to/auth';
+import React, {useEffect} from "react";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Layout from "../components/Layout";
+import Filter from "../components/Filter";
+import { useRouter } from 'next/router';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">Hakkımızda</Link>
-    </p>
-  </Layout>
-)
+const IndexPage:React.FC = () => {
+  const router = useRouter();
+  const { isAuthenticated } = useAuth();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      router.push('/login');
+    }
+  }, [isAuthenticated]);
+  return (
+      <div>
+        {isAuthenticated ? (
+            <Layout>
+              <div className="container">
+                <h1 style={{alignContent:'center'}}>Anasayfa</h1>
+              </div>
+              <Filter />
+            </Layout>
+        ) : (
+            <p>asdsad</p>
+        )}
+      </div>
+  )
+}
 
 export default IndexPage
