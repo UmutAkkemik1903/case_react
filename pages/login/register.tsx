@@ -29,8 +29,7 @@ const RegisterPage:React.FC = () => {
             const newUser = {  id: usersData.users.length + 1,email,name,surname,gender,birtday,password };
             const response = await axios.post('/api/users', newUser );
             openNotification('success')
-            //router.push("/login")
-            console.log("kayıt başarılı")
+            router.push("/login")
         } catch (error) {
             console.error('Kullanıcı eklenirken hata oluştu:', error);
         }
