@@ -1,12 +1,11 @@
 import React, {useState} from "react";
-import Link from "next/link";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import axios from "axios";
 import { useRouter } from 'next/router';
 import usersData from '../../utils/users.json';
 import {Form, Input, Button, notification, DatePicker, Select} from 'antd';
-import dayjs from "dayjs";
 const { Option } = Select;
+
 const RegisterPage:React.FC = () => {
     const dateFormat = 'YYYY/MM/DD';
     const router = useRouter();
@@ -32,7 +31,6 @@ const RegisterPage:React.FC = () => {
     const [birtday, setBirtday] = useState(null);
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-
     const handleSubmit = async (e) => {
         try {
             if (email){

@@ -22,14 +22,16 @@ export const AuthProvider: React.FC = ({ children }) => {
             setUser(userFromToken);
         }
     }, []);
+    const jwt = require('jsonwebtoken');
+    const secretKey = 'mysecretkey';
 
     const login = (user: User) => {
         setIsAuthenticated(true);
-        localStorage.setItem('token', JSON.stringify(user));
+        const token = jwt.sign({ user: user }, secretKey, { algorithm: 'HS256' });
+        localStorage.setItem('token', token);
         setUser(user);
         router.push('/');
     };
-
     const logout = () => {
         setIsAuthenticated(false);
         localStorage.removeItem('token');
