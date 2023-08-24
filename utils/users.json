@@ -6,35 +6,17 @@
       "name": "Umut",
       "surname": "Akkemik",
       "gender": 1,
-      "birtday": "1999.07.20",
+      "birtday": "1999/07/20",
       "password": "123"
     },
     {
-      "id": 3,
-      "email": "deneme",
-      "name": "deneme",
-      "surname": "deneme",
-      "gender": "1",
-      "birtday": "2023-08-17",
-      "password": "deneme"
-    },
-    {
-      "id": 3,
-      "email": "deneme",
-      "name": "deneme",
-      "surname": "deneme",
-      "gender": "1",
-      "birtday": "2023-08-17",
-      "password": "deneme"
-    },
-    {
-      "id": 4,
-      "email": "deneme",
-      "name": "deneme",
-      "surname": "deneme",
-      "gender": "1",
-      "birtday": "2023-08-17",
-      "password": "deneme"
+      "id": 2,
+      "email": "test@gmail.com",
+      "name": "test",
+      "surname": "test",
+      "gender": "2",
+      "birtday": "2023/08/09",
+      "password": "test"
     }
   ]
 }

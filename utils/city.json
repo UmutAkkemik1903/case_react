@@ -1,0 +1,24 @@
+{
+  "city": [
+    {
+      "id": 1,
+      "city_name": "İstanbul",
+      "starting": 1
+    },
+    {
+      "id": 2,
+      "city_name": "Ankara",
+      "starting": 1
+    },
+    {
+      "id": 3,
+      "city_name": "Erzurum",
+      "starting": 0
+    },
+    {
+      "id": 4,
+      "city_name": "İzmir",
+      "starting": 0
+    }
+  ]
+}

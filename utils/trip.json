@@ -1,0 +1,24 @@
+{
+  "trip": [
+    {
+      "id": 1,
+      "starting_city_id": 1,
+      "destination_city_id": 3
+    },
+    {
+      "id": 2,
+      "starting_city_id": 1,
+      "destination_city_id": 4
+    },
+    {
+      "id": 3,
+      "starting_city_id": 2,
+      "destination_city_id": 3
+    },
+    {
+      "id": 4,
+      "starting_city_id": 2,
+      "destination_city_id": 4
+    }
+  ]
+}

@@ -1,9 +1,11 @@
 import { AuthProvider } from '../path/to/auth';
-
+import { FilterContextProvider } from '../context/Context';
 function App({ Component, pageProps }) {
     return (
         <AuthProvider>
-            <Component {...pageProps} />
+            <FilterContextProvider>
+                <Component {...pageProps} />
+            </FilterContextProvider>
         </AuthProvider>
     );
 }

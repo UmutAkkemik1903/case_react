@@ -20,7 +20,7 @@ const IndexPage:React.FC = () => {
         {isAuthenticated ? (
             <Layout>
               <div className="container">
-                <h1 style={{alignContent:'center'}}>Anasayfa</h1>
+                <h1 style={{textAlign:'center'}}>Otobüs Bilet Satış</h1>
               </div>
               <Filter />
             </Layout>

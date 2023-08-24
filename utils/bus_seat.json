@@ -1,0 +1,129 @@
+{
+  "bus_seat": [
+    {
+      "id": 1,
+      "trip_city_id": 1,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 2,
+      "trip_city_id": 2,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 3,
+      "trip_city_id": 3,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 4,
+      "trip_city_id": 4,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 5,
+      "trip_city_id": 5,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 6,
+      "trip_city_id": 6,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 7,
+      "trip_city_id": 7,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 8,
+      "trip_city_id": 8,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 9,
+      "trip_city_id": 9,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 10,
+      "trip_city_id": 10,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 11,
+      "trip_city_id": 11,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 12,
+      "trip_city_id": 12,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 13,
+      "trip_city_id": 13,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 14,
+      "trip_city_id": 14,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 15,
+      "trip_city_id": 15,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 16,
+      "trip_city_id": 16,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 17,
+      "trip_city_id": 17,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 18,
+      "trip_city_id": 18,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 19,
+      "trip_city_id": 19,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 20,
+      "trip_city_id": 20,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 21,
+      "trip_city_id": 22,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 22,
+      "trip_city_id": 22,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 23,
+      "trip_city_id": 23,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 24,
+      "trip_city_id": 24,
+      "empty_bus_seat_count": 12
+    },
+    {
+      "id": 25,
+      "trip_city_id": 25,
+      "empty_bus_seat_count": 12
+    }
+  ]
+}
