@@ -41,7 +41,7 @@ const LoginPage:React.FC = () => {
                     <h1 className="h3 mb-3 fw-normal">Lürfen giriş yapın</h1>
 
                     <div style={{padding: '5px'}} className="form-floating">
-                        <input type="text" className="form-control" value={username} onChange={(e)=>setUsername(e.target.value)} placeholder="name@example.com"/>
+                        <input type="email" className="form-control" value={username} onChange={(e)=>setUsername(e.target.value)} placeholder="name@example.com"/>
                         <label htmlFor="floatingInput">Kullanıcı Adı</label>
                     </div>
                     <div style={{padding: '5px'}} className="form-floating">

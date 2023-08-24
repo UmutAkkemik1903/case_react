@@ -25,7 +25,7 @@ const IndexPage:React.FC = () => {
               <Filter />
             </Layout>
         ) : (
-            <p>asdsad</p>
+            <p>ups!</p>
         )}
       </div>
   )

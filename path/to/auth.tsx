@@ -18,8 +18,6 @@ export const AuthProvider: React.FC = ({ children }) => {
         const token = localStorage.getItem('token');
         if (token) {
             setIsAuthenticated(true);
-            const userFromToken = JSON.parse(token);
-            setUser(userFromToken);
         }
     }, []);
     const jwt = require('jsonwebtoken');
