@@ -1,47 +1,37 @@
-# TypeScript Next.js example
+<h3>OTOBÜS BİLET SATIŞ UYGULAMASI</h3>
+<p>Firmanın sefer saatlerini filtreleyip, bilet satın alabildiğiniz bir uygulamadır.</p>
+<br/>
+<h4>Proje Kurulumu</h4>
+<ul>
+    <li>İlk olarak, projeyi yerel bilgisayarınıza kopyalamak için GitHub'dan klonlayın:</li>
+    
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+    git clone https://github.com/UmutAkkemik1903/case_react.git
+<li>Projeyi yerel bilgisayarınızda çalıştırabilmeniz için Node js'i kurmanız gerekmektedir.</li>
+<br/>
+<li>Projenin ana dizinine giderek terminal ekranında Npm'i kurun:</li>
 
-## Deploy your own
+    npm install
+<li>Kurulumdan sonra projeyi ayağa kaldırmak için terminal ekranında aşağıdaki kodu kullanın:</li>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+    npm run dev
+</ul>
+<br/>
+<h4>Sefer Tarihleri</h4>
+<ul>
+<li>28/08/2023</li>
+<li>29/08/2023</li>
+</ul>
+<br/>
+<h4>Projede Kullanılan Teknolojilerin Sürümleri</h4>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
-
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
-
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+    "antd": "^5.8.4",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.1",
+    "dayjs": "^1.11.9",
+    "fs.promises": "^0.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
