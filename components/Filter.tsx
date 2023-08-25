@@ -7,8 +7,18 @@ import tripCityData from '../utils/tripCity.json';
 import tripData from '../utils/trip.json';
 import BusSeatData from '../utils/bus_seat.json';
 import moment from 'moment';
+import OrderModal from "../pages/order/orderModal";
 import { useFilterContext } from '../context/Context';
 const Filter: React.FC = () => {
+    const openModal = (id) => {
+        setSelectedId(id);
+        setOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedId(null);
+        setOpen(false);
+    };
     const handleDateChange = (date: moment.Moment | null) => {
         if (date) {
             const formattedDate = date.format('YYYY/MM/DD');
@@ -17,6 +27,8 @@ const Filter: React.FC = () => {
             setTripDate(undefined);
         }
     };
+    const [open, setOpen] = useState(false);
+    const [selectedId, setSelectedId] = useState(null);
     const dateFormat = 'YYYY/MM/DD';
     const { startingCity, setStartingCity, destinationCity, setDestinationCity, tripDate, setTripDate } = useFilterContext();
     const [showNoDataAlert, setShowNoDataAlert] = useState(false);
@@ -32,7 +44,7 @@ const Filter: React.FC = () => {
 
         return {
             ...tripCity,
-            trip_id: index + 1,
+            trip_id: tripCity.id,
             trip_price:tripCity.price,
             startingCity: startingCity ? startingCity.city_name : "",
             destinationCity: destinationCity ? destinationCity.city_name : "",
@@ -48,7 +60,7 @@ const Filter: React.FC = () => {
         { title: 'Sefer Saati', dataIndex: 'hour', key: 'hour' },
         { title: 'Boş Koltuk Sayısı', dataIndex: 'busSeat', key: 'busSeat' },
         { title: 'Sefer Fiyatı', dataIndex: 'price', key: 'price', render: (price) => `${price}₺`},
-        { title: '', dataIndex: '', key: '', render: () => <Button style={{backgroundColor:'#20b2aa', color:'white'}}>Satın Al</Button>},
+        { title: '', dataIndex: '', key: '', render: (record) => <Button onClick={() => openModal(record.trip_id)} style={{backgroundColor:'#20b2aa', color:'white'}}>Satın Al</Button>},
     ];
 
     const handleFilterSubmit = () => {
@@ -77,6 +89,7 @@ const Filter: React.FC = () => {
 
     return (
         <div>
+            <OrderModal visible={open} onCancel={closeModal} id={selectedId} />
             <Form
                 ref={formRef}
                 name="control-ref"

@@ -1,9 +1,10 @@
 import { useAuth} from '../path/to/auth';
-import React, {useEffect} from "react";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import React, {useEffect, useState} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "../components/Layout";
 import Filter from "../components/Filter";
 import { useRouter } from 'next/router';
+
 
 const IndexPage:React.FC = () => {
   const router = useRouter();

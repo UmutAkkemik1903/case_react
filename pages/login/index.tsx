@@ -12,7 +12,7 @@ const LoginPage:React.FC = () => {
         notification[type]({
             message: 'Giriş Hatası',
             description: 'Lütfen kullanıcı adınızı veya şifrenizi kontrol edininz!',
-            duration: 0,
+            duration: 3,
         });
     };
     const { login } = useAuth();

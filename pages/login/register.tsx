@@ -14,14 +14,14 @@ const RegisterPage:React.FC = () => {
         notification[type]({
             message: 'Kayıt',
             description: 'Kayıt Başarılı',
-            duration: 0,
+            duration: 3,
         });
     };
     const errorNotification = (type) => {
         notification[type]({
             message: 'Kayıt Başarısız',
             description: 'Lütfen bilgileri eksiksiz girin!',
-            duration: 0,
+            duration: 3,
         });
     };
     const [email, setEmail] = useState('');

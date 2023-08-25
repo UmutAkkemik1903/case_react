@@ -17,6 +17,7 @@ const layout:  React.FC = ({children}) => {
     return (
         <Layout>
             <Header
+                title="asdsad"
                 style={{
                     position: 'sticky',
                     top: 0,
@@ -29,6 +30,7 @@ const layout:  React.FC = ({children}) => {
             >
                 <div className="demo-logo" />
                 <Menu
+                    style={{color:'white'}}
                     theme="dark"
                     mode="horizontal"
                 />
