@@ -25,6 +25,7 @@
 <br/>
 <h4>Projede Kullanılan Teknolojilerin Sürümleri</h4>
 
+    "node": "v18.16.1"
     "antd": "^5.8.4",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",

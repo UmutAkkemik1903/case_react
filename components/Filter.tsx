@@ -85,6 +85,10 @@ const Filter: React.FC = () => {
         console.log(combinedData)
         setFilteredData(filteredData);
     };
+    const logout = () => {
+        localStorage.removeItem('token');
+        window.location.reload();
+    };
 
 
     return (
@@ -125,6 +129,7 @@ const Filter: React.FC = () => {
                     <Button onClick={handleFilterSubmit} type="primary" htmlType="submit">
                         Sefer Ara
                     </Button>
+                    <Button onClick={logout} style={{float:'right',marginLeft:'50px'}}>Çıkış Yap</Button>
                 </Form.Item>
             </Form>
             {showNoDataAlert && (

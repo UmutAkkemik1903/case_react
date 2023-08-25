@@ -74,8 +74,8 @@ const RegisterPage:React.FC = () => {
                     <Form.Item name="Doğum tarihi alanı" label="Doğum Tarihi" rules={[{ required: true }]}>
                         <DatePicker value={birtday} onChange={(date, dateString) => setBirtday(dateString)} className="form-control" format={dateFormat} />
                     </Form.Item>
-                    <Form.Item name="Şifre alanı" label="Ad" rules={[{ required: true }]}>
-                        <Input value={password} onChange={(e)=>setPassword(e.target.value)} />
+                    <Form.Item name="Şifre alanı" label="Şifre" rules={[{ required: true }]}>
+                        <Input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
                     </Form.Item>
                     <Button style={{height:'50px'}} className="w-100 btn btn-lg btn-primary" type="primary" htmlType="submit">
                         Kayıt Ol
